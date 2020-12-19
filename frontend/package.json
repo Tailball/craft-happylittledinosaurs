@@ -4,9 +4,18 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "clean": "rm -rf dist && rm -rf dist-nominify && rm -rf dist-minify",
+    "start": "npm run-script clean && parcel index.html",
+    "build-html": "parcel build index.html --public-url ./ --out-dir dist-nominify --no-minify ",
+    "build-assets": "parcel build index.html --public-url ./ --out-dir dist-minify",
+    "build": "npm run-script clean && npm run-script build-html && npm run-script build-assets"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4",
+    "sass": "^1.30.0"
+  }
 }
