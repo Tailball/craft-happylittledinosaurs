@@ -27,8 +27,7 @@
                 background: none;
             }
 
-            .table--price 
-            {
+            .table--price {
                 font-size: 3rem;
                 font-weight: 700;
                 display: block;
@@ -63,4 +62,30 @@
     #bundle-table .container {
         max-width: 720px;
     }
+}
+
+@media screen and (max-width: 768px) {
+    #bundle-table {
+        table {
+            th {
+                font-size: 1.6rem;
+                line-height: 1.5rem;
+
+                .table--price {
+                    font-size: 2rem;
+                    margin-top: .5rem;
+                }
+            }
+
+            td {
+                width: 33%;
+                font-size: 1rem;
+                padding: .75rem;
+                
+                &.table--rowindicator {
+                    width: 33%;
+                }
+            }
+        }
+    }   
 }

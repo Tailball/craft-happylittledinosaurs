@@ -36,3 +36,28 @@
         padding: 0 0 1.5rem 0;
     }
 }
+
+@media screen and (max-width: 768px) {
+    #other-games {
+        h1 {
+            text-align: center;
+        }
+        .game-container {
+            flex-direction: column;
+            
+            &--game {
+                margin: 0 2rem !important;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 540px) {
+    #other-games {
+        .game-container {
+            &--game {
+                margin: 0 !important;
+            }
+        }
+    }
+}
