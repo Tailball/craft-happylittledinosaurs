@@ -1,0 +1,17 @@
+dateModified: 1608380424
+email:
+  fromEmail: jochen.panjaer@telenet.be
+  fromName: happylittledinosaurs
+  transportType: craft\mail\transportadapters\Sendmail
+system:
+  edition: solo
+  live: true
+  name: happylittledinosaurs
+  schemaVersion: 3.5.13
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  requireEmailVerification: true
