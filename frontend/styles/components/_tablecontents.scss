@@ -66,6 +66,7 @@
 
 @media screen and (max-width: 768px) {
     #bundle-table {
+        
         table {
             th {
                 font-size: 1.6rem;
@@ -88,4 +89,10 @@
             }
         }
     }   
+}
+
+@media screen and (max-width: 435px) {
+    #bundle-table .container {
+        overflow-x: scroll !important;
+    }
 }
