@@ -1,0 +1,9 @@
+#our-story {
+    p {
+        text-align: left;
+        
+        &:first-of-type {
+            margin-bottom: 1.3rem;
+        }
+    }
+}

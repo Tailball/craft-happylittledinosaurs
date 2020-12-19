@@ -1,5 +1,12 @@
-$color: red;
+@import 'variables';
+@import 'reset';
+@import 'layout';
 
-body {
-    background-color: $color;
-}
+@import 'components/calltoaction';
+@import 'components/tablecontents';
+@import 'components/whatsinthebox';
+@import 'components/takeacloserlook';
+@import 'components/projecttimeline';
+@import 'components/ourstory';
+@import 'components/othergames';
+@import 'components/footer';

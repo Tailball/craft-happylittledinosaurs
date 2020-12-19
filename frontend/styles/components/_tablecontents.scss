@@ -1,0 +1,66 @@
+#bundle-table {
+    h1 {
+        width: 100%;
+        text-align: center;
+    }
+    h2 {
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+    table {
+        margin-top: 3rem;
+        width: 100%;
+        border-spacing: .5rem;
+        
+        
+        th {
+            padding: 1rem;
+            background-color: $color-table-header;
+            color: $color-text-main;
+            font-family: $font-dinosaur;
+            font-size: 2.2rem;
+            text-transform: uppercase;
+            line-height: 2rem;
+            
+            &.table-empty {
+                background: none;
+            }
+
+            .table--price 
+            {
+                font-size: 3rem;
+                font-weight: 700;
+                display: block;
+                margin-top: .5rem;
+            }
+        }
+
+        td {
+            width: 38%;
+            font-size: 1.1rem;
+            font-weight: 700;
+            padding: .75rem;
+            background-color: $color-table-cell;
+            text-align: center;
+            
+            &.table--rowindicator {
+                width: 24%;
+                background-color: $color-table-row;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
+    #bundle-table .container {
+        max-width: 949px;
+    }
+}
+
+@media screen and (max-width: 975px) {
+    #bundle-table .container {
+        max-width: 720px;
+    }
+}

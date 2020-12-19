@@ -1,0 +1,38 @@
+#other-games {
+    .game-container {
+        display: flex;
+        
+        &--game {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            &--data {
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+
+                h2  {
+                    font-size: 1.2rem;
+                    text-align: center;
+                }
+
+                p {
+                    padding: 0 2.5rem 1.5rem 2.5rem;
+                    text-align: center;
+                }
+            }
+
+            &:nth-of-type(2) {
+                margin: 0 1.4rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    #other-games .game-container--game .game-container--game--data p {
+        padding: 0 0 1.5rem 0;
+    }
+}

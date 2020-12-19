@@ -1,0 +1,114 @@
+body {
+    font-family: $font-text;
+}
+
+.header {
+    background-color: $color-header;
+    height: 8.5rem;
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+
+    img {
+        height: 100%;
+        width: auto;
+    }
+}
+
+.banner {
+    width: 100%;
+    height: auto;
+}
+
+.banner + .section {
+    margin-top: -4px; /*Weird, images push the invisible margin 4px down?*/
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+
+    &>img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.section {
+    padding: 4rem 0;
+}
+
+.section-main {
+    background-color: $color-bg-main;
+    color: $color-text-main;
+}
+
+.section-reverse {
+    background-color: $color-bg-reverse;
+    color: $color-text-reverse;
+}
+
+h1 {
+    font-family: $font-dinosaur;
+    text-transform: uppercase;
+    font-size: 3.4rem;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+}
+
+p, li {
+    font-size: 1rem;
+}
+
+p {
+    line-height: 1.6rem;
+}
+
+button {
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: $font-dinosaur;
+    color: $color-text-main;
+    background-color: $color-action;
+    border: none;
+    border-radius: 6px;
+    width: 100%;
+    padding: .7rem;
+    cursor: pointer;
+    transition: all 200ms ease;
+
+    &:hover {
+        background-color: darken($color-action, 10%);
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
+    .container {
+        max-width: 950px;
+    }
+}
+
+@media screen and (max-width: 975px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .container {
+        background-color: salmon;
+    }
+}
+
