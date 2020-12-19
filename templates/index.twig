@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy Little Dinosaurs!</title>
+    <title>{{ entry.title }}</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
@@ -13,7 +13,8 @@
         <img src="assets/images/unstablegames-logo-new.svg" alt="Unstable Games logo" class="header--logo">
     </header>
 
-    <img id="top-banner" class="banner" src="assets/images/HLD_newbanner_v1.jpg" alt="Dinosaur banner">
+    {% set banner = entry.banner.one().getUrl() %}
+    <img id="top-banner" class="banner" src="{{ banner }}" alt="Dinosaur banner">
 
     <section id="call-to-action" class="section section-main">
         <div class="container">
