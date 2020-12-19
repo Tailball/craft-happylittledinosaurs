@@ -68,15 +68,18 @@ p {
     line-height: 1.6rem;
 }
 
-button {
+button, 
+a {
     font-size: 1.8rem;
     font-weight: 700;
     text-transform: uppercase;
     font-family: $font-dinosaur;
-    color: $color-text-main;
+    color: $color-header;
     background-color: $color-action;
     border: none;
     border-radius: 6px;
+    display: block;
+    text-align: center;
     width: 100%;
     padding: .7rem;
     cursor: pointer;
