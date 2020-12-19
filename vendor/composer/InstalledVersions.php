@@ -24,16 +24,25 @@ class InstalledVersions
 private static $installed = array (
   'root' => 
   array (
-    'pretty_version' => '1.0.64',
-    'version' => '1.0.64.0',
+    'pretty_version' => 'dev-main',
+    'version' => 'dev-main',
     'aliases' => 
     array (
     ),
-    'reference' => NULL,
-    'name' => 'craftcms/craft',
+    'reference' => 'bf3c898d5249c3d84c9477bed915dd5ca70018f6',
+    'name' => '__root__',
   ),
   'versions' => 
   array (
+    '__root__' => 
+    array (
+      'pretty_version' => 'dev-main',
+      'version' => 'dev-main',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'bf3c898d5249c3d84c9477bed915dd5ca70018f6',
+    ),
     'bower-asset/inputmask' => 
     array (
       'provided' => 
@@ -124,15 +133,6 @@ private static $installed = array (
       array (
       ),
       'reference' => 'c4b999b325736968a05d3bcc1a5a2444dfbe9323',
-    ),
-    'craftcms/craft' => 
-    array (
-      'pretty_version' => '1.0.64',
-      'version' => '1.0.64.0',
-      'aliases' => 
-      array (
-      ),
-      'reference' => NULL,
     ),
     'craftcms/oauth2-craftid' => 
     array (
