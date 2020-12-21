@@ -6,8 +6,8 @@ name: 'Cta Description'
 searchable: false
 settings:
   contentTable: '{{%matrixcontent_ctadescription}}'
-  maxBlocks: ''
-  minBlocks: ''
+  maxBlocks: '1'
+  minBlocks: '1'
   propagationMethod: all
 translationKeyFormat: null
 translationMethod: site

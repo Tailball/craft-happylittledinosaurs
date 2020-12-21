@@ -9,37 +9,43 @@
 
         <div class="bundle--table">
             <table>
-                <tr>
-                    <th class="table-empty"></th>
-
-                    {% set headers = bundle.tableTitles | split('/') %}
-                    {% for header in headers %}
-                        {% set headerElements = header | split(';') %}
-                        <th>
-                            {{ headerElements[0] }}
-                            <span class="table--price">{{ headerElements[1] }}</span>
-                        </th>
-                    {% endfor %}
-                </tr>
-
-                {% set rows = bundle.tableRows | split('/') %}
-                {% for row in rows %}
+                {% for row in bundle.tableData %}
                     <tr>
 
-                        {% set fields = row | split(';') %}
-                        {% for field in fields %}
+                        {% if loop.index0 == 0 %}
+                        
+                            <th class="table-empty"></th>
+                            <th>
+                                {% set se = row.standardEdition | split(';') %}
+                                {{ se[0] }}
+                                <span class="table--price">{{ se[1] }}</span>
+                            </th>
+                            <th>
+                                {% set ee = row.exclusiveEdition | split(';') %}
+                                {{ ee[0] }}
+                                <span class="table--price">{{ ee[1] }}</span>
+                            </th>
 
-                            {% if loop.index0 == 0 %}
-                                <td class="table--rowindicator">{{ field }}</td>
+                        {%else%}
+                            <td class="table--rowindicator">{{ row.rowData }}</td>
+
+                            {% if row.standardEdition == 'Y' %}
+                                <td><i class="fas fa-check"></i></td>
+                            {% elseif row.standardEdition == 'N' %}
+                                <td></td>
                             {% else %}
-                                {% if field == 'N' %} <td></td>
-                                {% elseif field == 'Y' %} <td><i class="fas fa-check"></i></td>
-                                {% else %} <td>{{ field }}</td>
-                                {% endif %}
+                                <td>{{ row.standardEdition }}</td>
                             {% endif %}
 
-                        {% endfor %}
+                            {% if row.exclusiveEdition == 'Y' %}
+                                <td><i class="fas fa-check"></i></td>
+                            {% elseif row.exclusiveEdition == 'N' %}
+                                <td></td>
+                            {% else %}
+                                <td>{{ row.exclusiveEdition }}</td>
+                            {% endif %}
 
+                        {% endif %}
                     </tr>
                 {% endfor %}
             </table>

@@ -6,8 +6,8 @@ name: 'Our Story'
 searchable: false
 settings:
   contentTable: '{{%matrixcontent_ourstory}}'
-  maxBlocks: ''
-  minBlocks: ''
+  maxBlocks: '1'
+  minBlocks: '1'
   propagationMethod: all
 translationKeyFormat: null
 translationMethod: site

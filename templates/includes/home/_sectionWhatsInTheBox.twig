@@ -20,6 +20,12 @@
                     <li>{{ line }}</li>
                 {% endfor %}
             </ul>
+
+            {% for item in box.test %}
+                {# {% for itemval in item %} #}
+                    {{ item.value }}<br>
+                {# {% endfor %} #}
+            {% endfor %}
         </div>
     </section>
 {% endfor %}

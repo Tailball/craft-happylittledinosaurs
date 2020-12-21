@@ -23,16 +23,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: a49cfed3-a1d1-4be7-b302-a55af354e910
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
-          -
-            fieldUid: b9f3f74a-b783-42bb-9923-68f3e5fc5312
+            fieldUid: 6d088e42-73c2-41aa-bc0f-11f3547c644a
             instructions: null
             label: null
             required: false
@@ -43,6 +34,83 @@ fieldLayouts:
         name: Content
         sortOrder: 1
 fields:
+  6d088e42-73c2-41aa-bc0f-11f3547c644a:
+    contentColumnType: text
+    fieldGroup: null
+    handle: tableData
+    instructions: ''
+    name: 'Table Data'
+    searchable: false
+    settings:
+      addRowLabel: 'Add a row'
+      columnType: text
+      columns:
+        __assoc__:
+          -
+            - col1
+            -
+              __assoc__:
+                -
+                  - heading
+                  - 'Row Data'
+                -
+                  - handle
+                  - rowData
+                -
+                  - width
+                  - ''
+                -
+                  - type
+                  - singleline
+          -
+            - col2
+            -
+              __assoc__:
+                -
+                  - heading
+                  - 'Standard Edition'
+                -
+                  - handle
+                  - standardEdition
+                -
+                  - width
+                  - ''
+                -
+                  - type
+                  - singleline
+          -
+            - col3
+            -
+              __assoc__:
+                -
+                  - heading
+                  - 'Exclusive Edition'
+                -
+                  - handle
+                  - exclusiveEdition
+                -
+                  - width
+                  - ''
+                -
+                  - type
+                  - singleline
+      defaults:
+        -
+          __assoc__:
+            -
+              - col1
+              - ''
+            -
+              - col2
+              - ''
+            -
+              - col3
+              - ''
+      maxRows: ''
+      minRows: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Table
   88b2ad21-520b-40c8-b4ee-1a555b199bfe:
     contentColumnType: text
     fieldGroup: null
@@ -62,50 +130,12 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
-  a49cfed3-a1d1-4be7-b302-a55af354e910:
-    contentColumnType: text
-    fieldGroup: null
-    handle: tableTitles
-    instructions: 'Divide by semicolon'
-    name: tableTitles
-    searchable: false
-    settings:
-      byteLimit: null
-      charLimit: null
-      code: ''
-      columnType: null
-      initialRows: '4'
-      multiline: ''
-      placeholder: 'standard edition;exclusive edition'
-      uiMode: normal
-    translationKeyFormat: null
-    translationMethod: none
-    type: craft\fields\PlainText
   b24d36e9-8a37-41d5-b9d1-6521dc2e0b2d:
     contentColumnType: text
     fieldGroup: null
     handle: matrixTitle
     instructions: ''
     name: matrixTitle
-    searchable: false
-    settings:
-      byteLimit: null
-      charLimit: null
-      code: ''
-      columnType: null
-      initialRows: '4'
-      multiline: ''
-      placeholder: ''
-      uiMode: normal
-    translationKeyFormat: null
-    translationMethod: none
-    type: craft\fields\PlainText
-  b9f3f74a-b783-42bb-9923-68f3e5fc5312:
-    contentColumnType: text
-    fieldGroup: null
-    handle: tableRows
-    instructions: 'Divide entries by semi colon. Divide rows by newline'
-    name: tableRows
     searchable: false
     settings:
       byteLimit: null

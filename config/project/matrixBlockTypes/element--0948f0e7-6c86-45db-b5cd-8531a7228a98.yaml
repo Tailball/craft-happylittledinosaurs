@@ -32,7 +32,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: ba91ffaf-225e-47ff-b07d-231c426226e5
+            fieldUid: e9d4e4e8-9aab-4636-9df3-3ddbaabe7de7
             instructions: null
             label: null
             required: false
@@ -142,25 +142,45 @@ fields:
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\Assets
-  ba91ffaf-225e-47ff-b07d-231c426226e5:
+  e9d4e4e8-9aab-4636-9df3-3ddbaabe7de7:
     contentColumnType: text
     fieldGroup: null
-    handle: list
+    handle: fixedList
     instructions: ''
-    name: list
+    name: 'Fixed List'
     searchable: false
     settings:
-      byteLimit: null
-      charLimit: null
-      code: ''
-      columnType: null
-      initialRows: '4'
-      multiline: ''
-      placeholder: ''
-      uiMode: normal
+      addRowLabel: 'Add a row'
+      columnType: text
+      columns:
+        __assoc__:
+          -
+            - col1
+            -
+              __assoc__:
+                -
+                  - heading
+                  - Value
+                -
+                  - handle
+                  - value
+                -
+                  - width
+                  - ''
+                -
+                  - type
+                  - singleline
+      defaults:
+        -
+          __assoc__:
+            -
+              - col1
+              - ''
+      maxRows: ''
+      minRows: ''
     translationKeyFormat: null
     translationMethod: none
-    type: craft\fields\PlainText
+    type: craft\fields\Table
 handle: element
 name: element
 sortOrder: 1

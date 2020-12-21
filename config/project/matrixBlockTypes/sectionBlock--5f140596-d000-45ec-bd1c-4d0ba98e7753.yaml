@@ -32,7 +32,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 25a3b259-0c84-4531-aa59-aab4f9698b01
+            fieldUid: d69e9126-ea8b-4a8b-8b29-290b07c30e50
             instructions: null
             label: null
             required: false
@@ -43,25 +43,6 @@ fieldLayouts:
         name: Content
         sortOrder: 1
 fields:
-  25a3b259-0c84-4531-aa59-aab4f9698b01:
-    contentColumnType: text
-    fieldGroup: null
-    handle: summation
-    instructions: ''
-    name: summation
-    searchable: false
-    settings:
-      byteLimit: null
-      charLimit: null
-      code: ''
-      columnType: null
-      initialRows: '4'
-      multiline: ''
-      placeholder: '97 cards • 4 dinosaur player boards • 4 dinosaur meeples • 1 rule book'
-      uiMode: normal
-    translationKeyFormat: null
-    translationMethod: none
-    type: craft\fields\PlainText
   43dee225-a3e4-4faa-8f23-d76ece35e529:
     contentColumnType: text
     fieldGroup: null
@@ -133,6 +114,45 @@ fields:
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\Assets
+  d69e9126-ea8b-4a8b-8b29-290b07c30e50:
+    contentColumnType: text
+    fieldGroup: null
+    handle: itemsSummary
+    instructions: ''
+    name: 'Items Summary'
+    searchable: false
+    settings:
+      addRowLabel: 'Add a row'
+      columnType: text
+      columns:
+        __assoc__:
+          -
+            - col1
+            -
+              __assoc__:
+                -
+                  - heading
+                  - Value
+                -
+                  - handle
+                  - value
+                -
+                  - width
+                  - ''
+                -
+                  - type
+                  - singleline
+      defaults:
+        -
+          __assoc__:
+            -
+              - col1
+              - ''
+      maxRows: ''
+      minRows: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Table
 handle: sectionBlock
 name: 'Section block'
 sortOrder: 1
