@@ -1,5 +1,10 @@
 <IfModule mod_rewrite.c>
     RewriteEngine On
+    
+    Header always set Access-Control-Allow-Headers "X-Requested-With, Authorization, Content-Type, Request-Method"
+    Header always set Access-Control-Allow-Methods "POST, GET, OPTIONS, DELETE, PUT"
+    SetEnvIf Origin "^http(s)?://(.+\.)?(localhost|staging.example.com|example.com)(:[0-9]+)?$" origin_is=$0
+    Header always set Access-Control-Allow-Origin %{origin_is}e env=origin_is
 
     # Send would-be 404 requests to Craft
     RewriteCond %{REQUEST_FILENAME} !-f

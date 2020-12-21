@@ -1,6 +1,6 @@
 siteUid: null
 sortOrder: 1
-template: includes/shopitem
+template: includes/shop/shopItem
 uriParts:
   - api/shopitems
 uriPattern: api/shopitems

@@ -1,8 +1,30 @@
-{% set skip = craft.app.request.getQueryParam("skip") %}
-{% set limit = craft.app.request.getQueryParam("limit") %}
-{% set items = craft.entries.section('shopItem').offset(skip).limit(limit) %}
+{% set limit = craft.app.request.getQueryParam('limit') %}
+{% set offset = craft.app.request.getQueryParam('skip') %}
 
-{% for entry in items %}
-    <h2>{{ entry.title }}</h2>
-    <h2>{{ entry.shopItemName }}</h2>
+{% 
+    set query = craft
+        .entries()
+        .section('shopItem')
+        .orderBy('postDate asc')
+        .offset(offset)
+        .limit(limit)
+        .all()
+%}
+
+{% 
+    set total = craft
+        .entries()
+        .section('shopItem')
+        .count()
+%}
+
+<span id="total-items">{{ total }}</span>
+
+{% for item in query %}
+    <div class="shopping-item">
+        {% set imgUrl = item.image.one().getUrl() %}
+        <img src="{{ imgUrl }}" alt="Base game">
+        <h2>{{ item.shopItemName }}</h2>
+        <p class="shopping-item--pricetag">${{ item.priceTag }}</p>
+    </div>
 {% endfor %}

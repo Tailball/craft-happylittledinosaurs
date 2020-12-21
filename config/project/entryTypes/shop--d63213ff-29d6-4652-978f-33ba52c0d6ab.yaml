@@ -28,6 +28,68 @@ fieldLayouts:
             width: 100
         name: Content
         sortOrder: 1
+      -
+        elements:
+          -
+            fieldUid: 4bfff36a-cda0-4893-a923-776c0658041d
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 122907c1-4e91-4621-b94c-c494900723b9
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 109682cb-163b-4fba-8b09-1978b39c3272
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 3501ae42-8ea8-4828-810e-45548120e746
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 7b76537e-99d1-42d2-ba7b-47829805858a
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Featured
+        sortOrder: 2
+      -
+        elements:
+          -
+            fieldUid: 4b6aad40-58d7-42aa-ae23-0e68e5ffb884
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: 'Shop Items'
+        sortOrder: 3
 handle: shop
 hasTitleField: false
 name: Shop

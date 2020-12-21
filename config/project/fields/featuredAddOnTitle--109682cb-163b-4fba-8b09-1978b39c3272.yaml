@@ -1,0 +1,18 @@
+contentColumnType: text
+fieldGroup: bfc9c07c-7d33-484e-b559-1eb1dac8b00a
+handle: featuredAddOnTitle
+instructions: ''
+name: 'Featured Add-On Title'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: ''
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText
