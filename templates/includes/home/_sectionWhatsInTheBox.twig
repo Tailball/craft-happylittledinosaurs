@@ -12,20 +12,14 @@
             <img src="{{ imgUrl }}" alt="Whats in the base box image" class="whatsinthebox--image">
 
             <ul>
-                {% set lines = box.summation | split(';') %}
-                {% for line in lines %}
+                {% for item in box.itemsSummary %}
                     {% if loop.index0 > 0 %}
                         <li>•</li>
                     {% endif %}
-                    <li>{{ line }}</li>
+                    <li>{{ item.value }}</li>
                 {% endfor %}
             </ul>
 
-            {% for item in box.test %}
-                {# {% for itemval in item %} #}
-                    {{ item.value }}<br>
-                {# {% endfor %} #}
-            {% endfor %}
         </div>
     </section>
 {% endfor %}
