@@ -1,0 +1,14 @@
+contentColumnType: string
+fieldGroup: 224285f8-6c4e-4c27-a6d6-0de6b628ee60
+handle: ctaPreorder
+instructions: ''
+name: 'Cta Preorder'
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_ctapreorder}}'
+  maxBlocks: ''
+  minBlocks: ''
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

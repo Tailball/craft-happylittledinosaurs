@@ -1,0 +1,33 @@
+<section id="call-to-action" class="section section-main">
+    <div class="container">
+        
+        {% set ctaDescription = entry.ctaDescription.one() %}
+        <div class="cta-preorder--row">
+            <div class="cta-preorder--image left">
+                <img src="{{ ctaDescription.image.one().getUrl() }}" alt="Exclusive box">
+            </div>
+            <div class="cta-preorder--description right">
+                <h2>{{ ctaDescription.descriptionTitle }}</h2>
+                <p>{{ ctaDescription.description }}</p>
+                <ul>
+                    {% set descriptionList = ctaDescription.list | split(';') %}
+                    {% for description in descriptionList %}
+                        <li>{{ description }}</li>
+                    {% endfor %}
+                </ul>
+                <a class="cta" href="shop.html">{{ ctaDescription.button }}</a>
+            </div>
+        </div>
+
+
+        {% set ctaPreorder = entry.ctaPreorder.one() %}
+        <div class="cta-preorder--row">
+            <div class="cta-preorder--game left">
+                <p>{{ ctaPreorder.description }}</p>
+            </div>
+            <div class="cta-preorder--video right">
+                <iframe src="{{ ctaPreorder.preorderUrl }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+            </div>
+        </div>
+    </div>
+</section>

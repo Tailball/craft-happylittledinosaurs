@@ -1,0 +1,8 @@
+{% set skip = craft.app.request.getQueryParam("skip") %}
+{% set limit = craft.app.request.getQueryParam("limit") %}
+{% set items = craft.entries.section('shopItem').offset(skip).limit(limit) %}
+
+{% for entry in items %}
+    <h2>{{ entry.title }}</h2>
+    <h2>{{ entry.shopItemName }}</h2>
+{% endfor %}

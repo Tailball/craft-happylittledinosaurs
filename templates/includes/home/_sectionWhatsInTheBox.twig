@@ -1,0 +1,25 @@
+{% set boxes = entry.whatsInTheBox.all() %}
+{% for box in boxes %}
+    <section id="includes-standard" class="section {{ loop.index0 % 2 == 0 ? 'section-main' : 'section-reverse' }}">
+        <div class="container">
+            {% if loop.index0 == 0 %}
+                <h1>{{ box.sectionTitle }}</h1>
+            {% endif %}
+            
+            <h2>{{ box.subtitle }}</h2>
+
+            {% set imgUrl = box.image.one().getUrl() %}
+            <img src="{{ imgUrl }}" alt="Whats in the base box image" class="whatsinthebox--image">
+
+            <ul>
+                {% set lines = box.summation | split(';') %}
+                {% for line in lines %}
+                    {% if loop.index0 > 0 %}
+                        <li>•</li>
+                    {% endif %}
+                    <li>{{ line }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+    </section>
+{% endfor %}

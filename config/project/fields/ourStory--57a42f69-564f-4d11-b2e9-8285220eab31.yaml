@@ -1,0 +1,14 @@
+contentColumnType: string
+fieldGroup: 224285f8-6c4e-4c27-a6d6-0de6b628ee60
+handle: ourStory
+instructions: ''
+name: 'Our Story'
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_ourstory}}'
+  maxBlocks: ''
+  minBlocks: ''
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

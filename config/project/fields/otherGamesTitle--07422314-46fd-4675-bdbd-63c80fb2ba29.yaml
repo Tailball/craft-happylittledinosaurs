@@ -1,0 +1,18 @@
+contentColumnType: text
+fieldGroup: 224285f8-6c4e-4c27-a6d6-0de6b628ee60
+handle: otherGamesTitle
+instructions: ''
+name: 'Other Games Title'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: ''
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

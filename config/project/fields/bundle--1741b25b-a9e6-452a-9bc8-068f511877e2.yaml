@@ -1,0 +1,14 @@
+contentColumnType: string
+fieldGroup: 224285f8-6c4e-4c27-a6d6-0de6b628ee60
+handle: bundle
+instructions: ''
+name: Bundle
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_bundle}}'
+  maxBlocks: '1'
+  minBlocks: '1'
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

@@ -1,0 +1,22 @@
+<section id="other-games" class="section section-reverse">
+    <div class="container">
+        <h1>{{ entry.otherGamesTitle }}</h1>
+        <div class="game-container">
+
+            {% set otherGames = entry.otherGames.all() %}
+            {% for game in otherGames %}
+                <div class="game-container--game">
+                    <div class="game-container--game--data">
+
+                        {% set imgUrl = game.image.one().getUrl() %}
+                        <img src="{{ imgUrl }}" alt="Unstable unicorns box">
+                        <h2>{{ game.gameTitle }}</h2>
+                        <p>{{ game.gameDescription }}</p>
+                    </div>
+                    <a class="cta" href="shop.html">{{ game.buyText }}</a>
+                </div>
+            {% endfor %}
+            
+        </div>
+    </div>
+</section>

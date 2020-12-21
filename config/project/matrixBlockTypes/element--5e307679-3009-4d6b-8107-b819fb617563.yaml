@@ -1,0 +1,124 @@
+field: 1741b25b-a9e6-452a-9bc8-068f511877e2
+fieldLayouts:
+  dca37def-ec6f-48dc-ad3d-1d59ac0e5a09:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: b24d36e9-8a37-41d5-b9d1-6521dc2e0b2d
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 88b2ad21-520b-40c8-b4ee-1a555b199bfe
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: a49cfed3-a1d1-4be7-b302-a55af354e910
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: b9f3f74a-b783-42bb-9923-68f3e5fc5312
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  88b2ad21-520b-40c8-b4ee-1a555b199bfe:
+    contentColumnType: text
+    fieldGroup: null
+    handle: matrixSubtitle
+    instructions: ''
+    name: matrixSubtitle
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  a49cfed3-a1d1-4be7-b302-a55af354e910:
+    contentColumnType: text
+    fieldGroup: null
+    handle: tableTitles
+    instructions: 'Divide by semicolon'
+    name: tableTitles
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: 'standard edition;exclusive edition'
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  b24d36e9-8a37-41d5-b9d1-6521dc2e0b2d:
+    contentColumnType: text
+    fieldGroup: null
+    handle: matrixTitle
+    instructions: ''
+    name: matrixTitle
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  b9f3f74a-b783-42bb-9923-68f3e5fc5312:
+    contentColumnType: text
+    fieldGroup: null
+    handle: tableRows
+    instructions: 'Divide entries by semi colon. Divide rows by newline'
+    name: tableRows
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: element
+name: element
+sortOrder: 1

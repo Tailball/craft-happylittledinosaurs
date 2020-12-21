@@ -37,6 +37,120 @@ fieldLayouts:
             width: 100
         name: Content
         sortOrder: 1
+      -
+        elements:
+          -
+            fieldUid: 955df9cb-053f-4443-b5ae-1e2f73d2ad7c
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 22d61bd7-d84f-4b0a-b2ae-8b0eb87fa71e
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Section-CallToAction
+        sortOrder: 2
+      -
+        elements:
+          -
+            fieldUid: 1741b25b-a9e6-452a-9bc8-068f511877e2
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Section-Bundle
+        sortOrder: 3
+      -
+        elements:
+          -
+            fieldUid: 70d771ca-07a3-4890-9fec-cb3cadc49158
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 249ef0ae-da23-4a87-a954-c81208b52b07
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Section-WhatsInTheBox
+        sortOrder: 4
+      -
+        elements:
+          -
+            fieldUid: 46e5c776-0d54-48f3-810c-b39d129fa37b
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 77462a97-50df-448d-8d7d-0135e9525f4e
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Section-TakeACloserLook
+        sortOrder: 5
+      -
+        elements:
+          -
+            fieldUid: 57a42f69-564f-4d11-b2e9-8285220eab31
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Section-Story
+        sortOrder: 6
+      -
+        elements:
+          -
+            fieldUid: 07422314-46fd-4675-bdbd-63c80fb2ba29
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 21ae595a-9db9-41ae-b5a7-29d345580411
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Section-OtherGames
+        sortOrder: 7
 handle: home
 hasTitleField: true
 name: Home

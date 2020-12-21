@@ -1,0 +1,138 @@
+field: 70d771ca-07a3-4890-9fec-cb3cadc49158
+fieldLayouts:
+  ad543913-a697-4a95-a0f5-af79cbb1953f:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 7c53bcde-78ac-4576-8a50-06f28dfd2431
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 43dee225-a3e4-4faa-8f23-d76ece35e529
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: ae8bb340-48e5-44ca-961a-5e4e6d0e0506
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 25a3b259-0c84-4531-aa59-aab4f9698b01
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  25a3b259-0c84-4531-aa59-aab4f9698b01:
+    contentColumnType: text
+    fieldGroup: null
+    handle: summation
+    instructions: ''
+    name: summation
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: '97 cards • 4 dinosaur player boards • 4 dinosaur meeples • 1 rule book'
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  43dee225-a3e4-4faa-8f23-d76ece35e529:
+    contentColumnType: text
+    fieldGroup: null
+    handle: subtitle
+    instructions: ''
+    name: subtitle
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  7c53bcde-78ac-4576-8a50-06f28dfd2431:
+    contentColumnType: text
+    fieldGroup: null
+    handle: sectionTitle
+    instructions: ''
+    name: 'Section Title'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  ae8bb340-48e5-44ca-961a-5e4e6d0e0506:
+    contentColumnType: string
+    fieldGroup: null
+    handle: image
+    instructions: ''
+    name: image
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowUploads: true
+      allowedKinds: null
+      defaultUploadLocationSource: 'volume:0e21ada9-6821-44c5-bc22-69e56704adcb'
+      defaultUploadLocationSubpath: ''
+      limit: ''
+      localizeRelations: false
+      previewMode: full
+      restrictFiles: ''
+      selectionLabel: ''
+      showSiteMenu: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      singleUploadLocationSource: 'volume:0e21ada9-6821-44c5-bc22-69e56704adcb'
+      singleUploadLocationSubpath: ''
+      source: null
+      sources:
+        - 'volume:0e21ada9-6821-44c5-bc22-69e56704adcb'
+      targetSiteId: null
+      useSingleFolder: false
+      validateRelatedElements: false
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+handle: sectionBlock
+name: 'Section block'
+sortOrder: 1

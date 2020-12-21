@@ -1,0 +1,138 @@
+field: 46e5c776-0d54-48f3-810c-b39d129fa37b
+fieldLayouts:
+  5f56b260-cfb3-410d-9d48-d521d2abe570:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 3f29eae5-c9a0-4743-adb0-d6dc2196d5be
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: bce818e2-ea07-486b-87a9-155ccf9f94cb
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 7630d272-f37b-4501-b321-91b966f23598
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: b8fb40e0-291e-4c47-83d9-2c4017fb6e28
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  3f29eae5-c9a0-4743-adb0-d6dc2196d5be:
+    contentColumnType: text
+    fieldGroup: null
+    handle: sectionTitle
+    instructions: ''
+    name: 'Section Title'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  7630d272-f37b-4501-b321-91b966f23598:
+    contentColumnType: text
+    fieldGroup: null
+    handle: cardName
+    instructions: ''
+    name: 'Card Name'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  b8fb40e0-291e-4c47-83d9-2c4017fb6e28:
+    contentColumnType: text
+    fieldGroup: null
+    handle: cardDescription
+    instructions: ''
+    name: 'Card Description'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  bce818e2-ea07-486b-87a9-155ccf9f94cb:
+    contentColumnType: string
+    fieldGroup: null
+    handle: image
+    instructions: ''
+    name: Image
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowUploads: true
+      allowedKinds: null
+      defaultUploadLocationSource: 'volume:0e21ada9-6821-44c5-bc22-69e56704adcb'
+      defaultUploadLocationSubpath: ''
+      limit: ''
+      localizeRelations: false
+      previewMode: full
+      restrictFiles: ''
+      selectionLabel: ''
+      showSiteMenu: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      singleUploadLocationSource: 'volume:0e21ada9-6821-44c5-bc22-69e56704adcb'
+      singleUploadLocationSubpath: ''
+      source: null
+      sources:
+        - 'volume:0e21ada9-6821-44c5-bc22-69e56704adcb'
+      targetSiteId: null
+      useSingleFolder: false
+      validateRelatedElements: false
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+handle: sectionblock
+name: sectionBlock
+sortOrder: 1

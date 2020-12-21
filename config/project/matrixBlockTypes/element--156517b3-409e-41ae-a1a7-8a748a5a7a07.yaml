@@ -1,0 +1,62 @@
+field: 22d61bd7-d84f-4b0a-b2ae-8b0eb87fa71e
+fieldLayouts:
+  668bcdd3-af06-4bfc-b006-701a4aa8e248:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: d32f7b6d-2688-42c8-a568-32c48c01de9d
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: e9593c4e-5f13-427a-812b-96c704d1badb
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  d32f7b6d-2688-42c8-a568-32c48c01de9d:
+    contentColumnType: text
+    fieldGroup: null
+    handle: description
+    instructions: ''
+    name: description
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  e9593c4e-5f13-427a-812b-96c704d1badb:
+    contentColumnType: string(255)
+    fieldGroup: null
+    handle: preorderUrl
+    instructions: ''
+    name: 'Preorder Url'
+    searchable: false
+    settings:
+      maxLength: '255'
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Url
+handle: element
+name: element
+sortOrder: 1

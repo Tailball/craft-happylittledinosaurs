@@ -1,0 +1,18 @@
+fieldLayouts:
+  7d353f94-d1ea-41d6-b0c1-ce0fc3cc948f:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 47f80b4f-c8bc-454a-87bc-ab29f2f6305c
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Data
+        sortOrder: 1
+handle: mainLogo
+name: 'Main Logo'

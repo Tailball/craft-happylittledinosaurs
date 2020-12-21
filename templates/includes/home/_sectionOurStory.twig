@@ -1,0 +1,9 @@
+{% set story = entry.ourStory.one() %}
+
+<section id="our-story" class="section section-main">
+    <div class="container">
+        <h1>{{ story.elementtitle }}</h1>
+        <p>{{ story.elementparagraph1 }}</p>
+        <p>{{ story.elementparagraph2 }}</p>
+    </div>
+</section>

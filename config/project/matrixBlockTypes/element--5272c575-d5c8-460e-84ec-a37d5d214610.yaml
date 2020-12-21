@@ -1,0 +1,138 @@
+field: 21ae595a-9db9-41ae-b5a7-29d345580411
+fieldLayouts:
+  3f200807-1bde-4f2d-b592-53a3d9b176a2:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: aeead7a5-9278-4930-a2ba-e6693a7b0bfa
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: d270122d-0c80-4661-8b31-916c0206e6f2
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: d1801c45-b36c-4109-8017-8a4cc7d07490
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 1b556fef-b861-4c40-a115-21cf20069af4
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  1b556fef-b861-4c40-a115-21cf20069af4:
+    contentColumnType: string
+    fieldGroup: null
+    handle: image
+    instructions: ''
+    name: image
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowUploads: true
+      allowedKinds: null
+      defaultUploadLocationSource: 'volume:0e21ada9-6821-44c5-bc22-69e56704adcb'
+      defaultUploadLocationSubpath: ''
+      limit: ''
+      localizeRelations: false
+      previewMode: full
+      restrictFiles: ''
+      selectionLabel: ''
+      showSiteMenu: false
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      singleUploadLocationSource: 'volume:0e21ada9-6821-44c5-bc22-69e56704adcb'
+      singleUploadLocationSubpath: ''
+      source: null
+      sources:
+        - 'volume:0e21ada9-6821-44c5-bc22-69e56704adcb'
+      targetSiteId: null
+      useSingleFolder: false
+      validateRelatedElements: false
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  aeead7a5-9278-4930-a2ba-e6693a7b0bfa:
+    contentColumnType: text
+    fieldGroup: null
+    handle: gameTitle
+    instructions: ''
+    name: 'Game Title'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  d1801c45-b36c-4109-8017-8a4cc7d07490:
+    contentColumnType: text
+    fieldGroup: null
+    handle: buyText
+    instructions: ''
+    name: 'Buy Text'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  d270122d-0c80-4661-8b31-916c0206e6f2:
+    contentColumnType: text
+    fieldGroup: null
+    handle: gameDescription
+    instructions: ''
+    name: 'Game Description'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: element
+name: element
+sortOrder: 1

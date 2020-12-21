@@ -1,0 +1,14 @@
+contentColumnType: string
+fieldGroup: 224285f8-6c4e-4c27-a6d6-0de6b628ee60
+handle: whatsInTheBox
+instructions: ''
+name: 'Whats In The Box'
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_whatsinthebox}}'
+  maxBlocks: ''
+  minBlocks: ''
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

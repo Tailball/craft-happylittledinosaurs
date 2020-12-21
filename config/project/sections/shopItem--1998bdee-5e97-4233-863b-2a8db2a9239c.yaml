@@ -1,0 +1,11 @@
+enableVersioning: true
+handle: shopItem
+name: 'Shop Item'
+propagationMethod: all
+siteSettings:
+  f6550cfc-77a6-4397-8d0e-2c7b512698a3:
+    enabledByDefault: true
+    hasUrls: false
+    template: null
+    uriFormat: null
+type: channel

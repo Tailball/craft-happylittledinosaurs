@@ -1,0 +1,18 @@
+{% set tacls = entry.takeACloserLook.all() %}
+
+{% for tacl in tacls %}
+<section id="closerlook-disaster" class="section section-{{ loop.index0 % 2 == 0 ? 'reverse' : 'main' }}">
+    <div class="container">
+        {% if loop.index0 == 0 %}
+            <h1>{{ tacl.sectionTitle }}</h1>
+        {% endif %}
+
+        {% set imgUrl = tacl.image.one().getUrl() %}
+        <img src="{{ imgUrl }}" alt="disaster cards">
+
+        <h2>{{ tacl.cardName }}</h2>
+
+        <p>{{ tacl.cardDescription }}</p>
+    </div>
+</section>
+{% endfor %}

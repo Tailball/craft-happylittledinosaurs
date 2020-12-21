@@ -1,0 +1,48 @@
+<section id="bundle-table" class="section section-reverse">
+
+    {% set bundle = entry.bundle.one() %}
+    <div class="container">
+        <div class="bundle--header">
+            <h1>{{ bundle.matrixTitle }}</h1>
+            <h2>{{ bundle.matrixSubtitle }}</h2>
+        </div>
+
+        <div class="bundle--table">
+            <table>
+                <tr>
+                    <th class="table-empty"></th>
+
+                    {% set headers = bundle.tableTitles | split('/') %}
+                    {% for header in headers %}
+                        {% set headerElements = header | split(';') %}
+                        <th>
+                            {{ headerElements[0] }}
+                            <span class="table--price">{{ headerElements[1] }}</span>
+                        </th>
+                    {% endfor %}
+                </tr>
+
+                {% set rows = bundle.tableRows | split('/') %}
+                {% for row in rows %}
+                    <tr>
+
+                        {% set fields = row | split(';') %}
+                        {% for field in fields %}
+
+                            {% if loop.index0 == 0 %}
+                                <td class="table--rowindicator">{{ field }}</td>
+                            {% else %}
+                                {% if field == 'N' %} <td></td>
+                                {% elseif field == 'Y' %} <td><i class="fas fa-check"></i></td>
+                                {% else %} <td>{{ field }}</td>
+                                {% endif %}
+                            {% endif %}
+
+                        {% endfor %}
+
+                    </tr>
+                {% endfor %}
+            </table>
+        </div>
+    </div>
+</section>

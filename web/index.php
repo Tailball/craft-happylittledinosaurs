@@ -20,3 +20,4 @@ define('CRAFT_ENVIRONMENT', getenv('ENVIRONMENT') ?: 'production');
 /** @var craft\web\Application $app */
 $app = require CRAFT_VENDOR_PATH.'/craftcms/cms/bootstrap/web.php';
 $app->run();
+?>
